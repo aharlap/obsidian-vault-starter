@@ -22,6 +22,21 @@ The example notes are removed, so the vault starts empty.
 - To track a meeting action item, type it as a checkbox, then run TaskNotes' convert command on that line. It becomes a task note with a link in its place.
 - Add a project to a task's `projects` property and the task appears in that project note's Tasks section.
 
+## Keyboard shortcuts
+
+`.obsidian/hotkeys.json` sets these. On Windows and Linux, Cmd is Ctrl and Option is Alt.
+
+| Shortcut | Does |
+|---|---|
+| Cmd+N | New note in `Notes/` (Obsidian's default) |
+| Cmd+Shift+I | Insert a template into the current note |
+| Cmd+Option+D | Open today's daily note |
+| Cmd+Option+J | New journal entry |
+| Cmd+Option+T | New task |
+| Cmd+Option+C | Turn the checkbox at the cursor into a task |
+| Cmd+Option+L | Task list |
+| Cmd+Option+A | Task agenda |
+
 ## License
 
 MIT. The original template is copyright Steph Ango; see `LICENSE`.

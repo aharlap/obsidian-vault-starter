@@ -1,0 +1,9 @@
+{
+  "insert-template": [{ "modifiers": ["Mod", "Shift"], "key": "I" }],
+  "daily-notes": [{ "modifiers": ["Mod", "Alt"], "key": "D" }],
+  "zk-prefixer": [{ "modifiers": ["Mod", "Alt"], "key": "J" }],
+  "tasknotes:create-new-task": [{ "modifiers": ["Mod", "Alt"], "key": "T" }],
+  "tasknotes:convert-to-tasknote": [{ "modifiers": ["Mod", "Alt"], "key": "C" }],
+  "tasknotes:open-tasks-view": [{ "modifiers": ["Mod", "Alt"], "key": "L" }],
+  "tasknotes:open-agenda-view": [{ "modifiers": ["Mod", "Alt"], "key": "A" }]
+}
