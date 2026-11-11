@@ -30,3 +30,12 @@ views:
     columnSize:
       file.name: 209
       note.type: 199
+  - type: table
+    name: Ideas
+    filters:
+      and:
+        - status == "idea"
+    order:
+      - file.name
+      - type
+      - url
