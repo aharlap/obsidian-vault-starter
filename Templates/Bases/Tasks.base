@@ -1,0 +1,45 @@
+filters:
+  and:
+    - file.hasTag("task")
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Task
+  note.status:
+    displayName: Status
+  note.due:
+    displayName: Due
+  note.scheduled:
+    displayName: Scheduled
+  note.projects:
+    displayName: Projects
+views:
+  - type: table
+    name: Open
+    filters:
+      and:
+        - status != "done"
+    order:
+      - file.name
+      - status
+      - due
+      - scheduled
+      - projects
+    sort:
+      - property: due
+        direction: ASC
+  - type: table
+    name: Project
+    filters:
+      and:
+        - list(projects).contains(this)
+    order:
+      - file.name
+      - status
+      - due
+      - scheduled
+    sort:
+      - property: status
+        direction: DESC
+      - property: due
+        direction: ASC
